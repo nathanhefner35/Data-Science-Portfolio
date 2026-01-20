@@ -1,0 +1,2922 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='NathanHefnerTask1' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='churn_clean' inline='true' name='federated.14w1muw0h01ws115tna9d1tqarof' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='churn_clean' name='textscan.1ndjyww09e2dvj1fv3k530bq1nmu'>
+            <connection class='textscan' directory='C:/Users/Nathan/Documents/WGU/D601/Task 1' filename='churn_clean.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1ndjyww09e2dvj1fv3k530bq1nmu' name='churn_clean.csv' table='[churn_clean#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='CaseOrder' ordinal='0' />
+            <column datatype='string' name='Customer_id' ordinal='1' />
+            <column datatype='string' name='Interaction' ordinal='2' />
+            <column datatype='string' name='UID' ordinal='3' />
+            <column datatype='string' name='City' ordinal='4' />
+            <column datatype='string' name='State' ordinal='5' />
+            <column datatype='string' name='County' ordinal='6' />
+            <column datatype='integer' name='Zip' ordinal='7' />
+            <column datatype='real' name='Lat' ordinal='8' />
+            <column datatype='real' name='Lng' ordinal='9' />
+            <column datatype='integer' name='Population' ordinal='10' />
+            <column datatype='string' name='Area' ordinal='11' />
+            <column datatype='string' name='TimeZone' ordinal='12' />
+            <column datatype='string' name='Job' ordinal='13' />
+            <column datatype='integer' name='Children' ordinal='14' />
+            <column datatype='integer' name='Age' ordinal='15' />
+            <column datatype='real' name='Income' ordinal='16' />
+            <column datatype='string' name='Marital' ordinal='17' />
+            <column datatype='string' name='Gender' ordinal='18' />
+            <column datatype='string' name='Churn' ordinal='19' />
+            <column datatype='real' name='Outage_sec_perweek' ordinal='20' />
+            <column datatype='integer' name='Email' ordinal='21' />
+            <column datatype='integer' name='Contacts' ordinal='22' />
+            <column datatype='integer' name='Yearly_equip_failure' ordinal='23' />
+            <column datatype='string' name='Techie' ordinal='24' />
+            <column datatype='string' name='Contract' ordinal='25' />
+            <column datatype='string' name='Port_modem' ordinal='26' />
+            <column datatype='string' name='Tablet' ordinal='27' />
+            <column datatype='string' name='InternetService' ordinal='28' />
+            <column datatype='string' name='Phone' ordinal='29' />
+            <column datatype='string' name='Multiple' ordinal='30' />
+            <column datatype='string' name='OnlineSecurity' ordinal='31' />
+            <column datatype='string' name='OnlineBackup' ordinal='32' />
+            <column datatype='string' name='DeviceProtection' ordinal='33' />
+            <column datatype='string' name='TechSupport' ordinal='34' />
+            <column datatype='string' name='StreamingTV' ordinal='35' />
+            <column datatype='string' name='StreamingMovies' ordinal='36' />
+            <column datatype='string' name='PaperlessBilling' ordinal='37' />
+            <column datatype='string' name='PaymentMethod' ordinal='38' />
+            <column datatype='real' name='Tenure' ordinal='39' />
+            <column datatype='real' name='MonthlyCharge' ordinal='40' />
+            <column datatype='real' name='Bandwidth_GB_Year' ordinal='41' />
+            <column datatype='integer' name='Item1' ordinal='42' />
+            <column datatype='integer' name='Item2' ordinal='43' />
+            <column datatype='integer' name='Item3' ordinal='44' />
+            <column datatype='integer' name='Item4' ordinal='45' />
+            <column datatype='integer' name='Item5' ordinal='46' />
+            <column datatype='integer' name='Item6' ordinal='47' />
+            <column datatype='integer' name='Item7' ordinal='48' />
+            <column datatype='integer' name='Item8' ordinal='49' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CaseOrder</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CaseOrder]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>CaseOrder</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Customer_id]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Customer_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Interaction</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Interaction]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Interaction</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[UID]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>UID</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[County]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zip</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zip]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Zip</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lat]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Lat</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lng</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lng]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Lng</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Population</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Area</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Area]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Area</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TimeZone</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TimeZone]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>TimeZone</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Job</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Job]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Job</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Children</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Children]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Children</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Income</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Income]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Income</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Marital</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Marital]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Marital</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Churn</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Churn]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Churn</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Outage_sec_perweek</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Outage_sec_perweek]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Outage_sec_perweek</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Email</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Email]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Email</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Contacts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Contacts]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Contacts</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Yearly_equip_failure</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Yearly_equip_failure]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Yearly_equip_failure</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Techie</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Techie]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Techie</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Contract</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Contract]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Contract</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Port_modem</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Port_modem]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Port_modem</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tablet</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Tablet]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Tablet</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InternetService</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[InternetService]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>InternetService</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Phone</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Phone]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Phone</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Multiple</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Multiple]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Multiple</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OnlineSecurity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OnlineSecurity]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>OnlineSecurity</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OnlineBackup</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OnlineBackup]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>OnlineBackup</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DeviceProtection</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DeviceProtection]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>DeviceProtection</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TechSupport</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TechSupport]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>TechSupport</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StreamingTV</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[StreamingTV]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>StreamingTV</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StreamingMovies</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[StreamingMovies]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>StreamingMovies</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PaperlessBilling</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PaperlessBilling]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>PaperlessBilling</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PaymentMethod</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PaymentMethod]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>PaymentMethod</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tenure</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tenure]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Tenure</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MonthlyCharge</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MonthlyCharge]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>MonthlyCharge</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bandwidth_GB_Year</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Bandwidth_GB_Year]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Bandwidth_GB_Year</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item1]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Item1</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item2]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Item2</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item3]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Item3</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item4]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Item4</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item5]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Item5</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item6</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item6]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Item6</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item7</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item7]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Item7</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item8</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item8]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Item8</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Age]' peg='0' size='5' />
+      </column>
+      <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='Bandwidth GB Year (bin)' datatype='integer' name='[Bandwidth GB Year (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='2' formula='[Bandwidth_GB_Year]' peg='0' size='250' />
+      </column>
+      <column caption='Bandwidth GB Year' datatype='real' name='[Bandwidth_GB_Year]' role='dimension' type='quantitative' />
+      <column caption='Case Order' datatype='integer' name='[CaseOrder]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Churn]' role='dimension' type='nominal' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Customer id' datatype='string' name='[Customer_id]' role='dimension' type='nominal' />
+      <column caption='Device Protection' datatype='string' name='[DeviceProtection]' role='dimension' type='nominal' />
+      <column aggregation='None' caption='Income (bin)' datatype='integer' name='[Income (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='4' formula='[Income]' peg='0' size='10000' />
+      </column>
+      <column datatype='real' name='[Income]' role='measure' type='quantitative' />
+      <column caption='Internet Service' datatype='string' name='[InternetService]' role='dimension' type='nominal' />
+      <column aggregation='Avg' datatype='real' name='[Lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column caption='Monthly Charge' datatype='real' name='[MonthlyCharge]' role='measure' type='quantitative' />
+      <column caption='Online Backup' datatype='string' name='[OnlineBackup]' role='dimension' type='nominal' />
+      <column caption='Online Security' datatype='string' name='[OnlineSecurity]' role='dimension' type='nominal' />
+      <column caption='Outage sec perweek' datatype='real' name='[Outage_sec_perweek]' role='measure' type='quantitative' />
+      <column caption='Paperless Billing' datatype='string' name='[PaperlessBilling]' role='dimension' type='nominal' />
+      <column caption='Payment Method' datatype='string' name='[PaymentMethod]' role='dimension' type='nominal' />
+      <column caption='Port modem' datatype='string' name='[Port_modem]' role='dimension' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Streaming Movies' datatype='string' name='[StreamingMovies]' role='dimension' type='nominal' />
+      <column caption='Streaming TV' datatype='string' name='[StreamingTV]' role='dimension' type='nominal' />
+      <column caption='Tech Support' datatype='string' name='[TechSupport]' role='dimension' type='nominal' />
+      <column aggregation='None' caption='Tenure (bin)' datatype='integer' name='[Tenure (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Tenure]' peg='0' size='2' />
+      </column>
+      <column datatype='real' name='[Tenure]' role='measure' type='quantitative' />
+      <column caption='Time Zone' datatype='string' name='[TimeZone]' role='dimension' type='nominal' />
+      <column caption='Yearly equip failure' datatype='integer' name='[Yearly_equip_failure]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Zip]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column caption='churn_clean.csv' datatype='table' name='[__tableau_internal_object_id__].[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]' role='measure' type='quantitative' />
+      <column-instance column='[Churn]' derivation='None' name='[none:Churn:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Nathan/AppData/Local/Temp/TableauTemp/#TableauTemp_0quitik1pfulfo18z9xh211dfror.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/18/2025 05:25:17 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>CaseOrder</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CaseOrder]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CaseOrder</remote-alias>
+              <ordinal>0</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Interaction</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Interaction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Interaction</remote-alias>
+              <ordinal>2</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>UID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[UID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>UID</remote-alias>
+              <ordinal>3</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>City</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[City]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>City</remote-alias>
+              <ordinal>4</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3599</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>5</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>52</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>County</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[County]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>County</remote-alias>
+              <ordinal>6</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1379</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Zip</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Zip]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Zip</remote-alias>
+              <ordinal>7</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5505</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lat</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Lat]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Lat</remote-alias>
+              <ordinal>8</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5505</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lng</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Lng]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Lng</remote-alias>
+              <ordinal>9</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5505</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Population</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Population]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Population</remote-alias>
+              <ordinal>10</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3624</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Area</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Area]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Area</remote-alias>
+              <ordinal>11</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TimeZone</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[TimeZone]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TimeZone</remote-alias>
+              <ordinal>12</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Job</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Job]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Job</remote-alias>
+              <ordinal>13</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>938</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Children</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Children]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Children</remote-alias>
+              <ordinal>14</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>15</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>72</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Income</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Income]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Income</remote-alias>
+              <ordinal>16</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Marital</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Marital]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Marital</remote-alias>
+              <ordinal>17</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>18</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Churn</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Churn]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Churn</remote-alias>
+              <ordinal>19</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Outage_sec_perweek</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Outage_sec_perweek]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Outage_sec_perweek</remote-alias>
+              <ordinal>20</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9601</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Email</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Email]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Email</remote-alias>
+              <ordinal>21</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Contacts</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Contacts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Contacts</remote-alias>
+              <ordinal>22</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Yearly_equip_failure</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Yearly_equip_failure]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Yearly_equip_failure</remote-alias>
+              <ordinal>23</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Techie</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Techie]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Techie</remote-alias>
+              <ordinal>24</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Contract</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Contract]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Contract</remote-alias>
+              <ordinal>25</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Port_modem</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Port_modem]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Port_modem</remote-alias>
+              <ordinal>26</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Tablet</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Tablet]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Tablet</remote-alias>
+              <ordinal>27</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>InternetService</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[InternetService]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>InternetService</remote-alias>
+              <ordinal>28</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Phone</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Phone]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Phone</remote-alias>
+              <ordinal>29</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Multiple</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Multiple]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Multiple</remote-alias>
+              <ordinal>30</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OnlineSecurity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[OnlineSecurity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OnlineSecurity</remote-alias>
+              <ordinal>31</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OnlineBackup</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[OnlineBackup]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OnlineBackup</remote-alias>
+              <ordinal>32</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DeviceProtection</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DeviceProtection]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DeviceProtection</remote-alias>
+              <ordinal>33</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TechSupport</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[TechSupport]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TechSupport</remote-alias>
+              <ordinal>34</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>StreamingTV</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[StreamingTV]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>StreamingTV</remote-alias>
+              <ordinal>35</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>StreamingMovies</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[StreamingMovies]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>StreamingMovies</remote-alias>
+              <ordinal>36</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PaperlessBilling</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PaperlessBilling]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PaperlessBilling</remote-alias>
+              <ordinal>37</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PaymentMethod</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PaymentMethod]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PaymentMethod</remote-alias>
+              <ordinal>38</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Tenure</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Tenure]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Tenure</remote-alias>
+              <ordinal>39</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MonthlyCharge</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MonthlyCharge]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MonthlyCharge</remote-alias>
+              <ordinal>40</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>896</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Bandwidth_GB_Year</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Bandwidth_GB_Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Bandwidth_GB_Year</remote-alias>
+              <ordinal>41</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Item1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item1</remote-alias>
+              <ordinal>42</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item2</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Item2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item2</remote-alias>
+              <ordinal>43</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item3</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Item3]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item3</remote-alias>
+              <ordinal>44</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item4</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Item4]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item4</remote-alias>
+              <ordinal>45</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item5</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Item5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item5</remote-alias>
+              <ordinal>46</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item6</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Item6]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item6</remote-alias>
+              <ordinal>47</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item7</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Item7]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item7</remote-alias>
+              <ordinal>48</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item8</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Item8]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item8</remote-alias>
+              <ordinal>49</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Churn:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;No&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Yes&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='churn_clean.csv' id='churn_clean.csv_E00BF48C41AC4E3AA620F72D70E33F07'>
+            <properties context=''>
+              <relation connection='textscan.1ndjyww09e2dvj1fv3k530bq1nmu' name='churn_clean.csv' table='[churn_clean#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='CaseOrder' ordinal='0' />
+                  <column datatype='string' name='Customer_id' ordinal='1' />
+                  <column datatype='string' name='Interaction' ordinal='2' />
+                  <column datatype='string' name='UID' ordinal='3' />
+                  <column datatype='string' name='City' ordinal='4' />
+                  <column datatype='string' name='State' ordinal='5' />
+                  <column datatype='string' name='County' ordinal='6' />
+                  <column datatype='integer' name='Zip' ordinal='7' />
+                  <column datatype='real' name='Lat' ordinal='8' />
+                  <column datatype='real' name='Lng' ordinal='9' />
+                  <column datatype='integer' name='Population' ordinal='10' />
+                  <column datatype='string' name='Area' ordinal='11' />
+                  <column datatype='string' name='TimeZone' ordinal='12' />
+                  <column datatype='string' name='Job' ordinal='13' />
+                  <column datatype='integer' name='Children' ordinal='14' />
+                  <column datatype='integer' name='Age' ordinal='15' />
+                  <column datatype='real' name='Income' ordinal='16' />
+                  <column datatype='string' name='Marital' ordinal='17' />
+                  <column datatype='string' name='Gender' ordinal='18' />
+                  <column datatype='string' name='Churn' ordinal='19' />
+                  <column datatype='real' name='Outage_sec_perweek' ordinal='20' />
+                  <column datatype='integer' name='Email' ordinal='21' />
+                  <column datatype='integer' name='Contacts' ordinal='22' />
+                  <column datatype='integer' name='Yearly_equip_failure' ordinal='23' />
+                  <column datatype='string' name='Techie' ordinal='24' />
+                  <column datatype='string' name='Contract' ordinal='25' />
+                  <column datatype='string' name='Port_modem' ordinal='26' />
+                  <column datatype='string' name='Tablet' ordinal='27' />
+                  <column datatype='string' name='InternetService' ordinal='28' />
+                  <column datatype='string' name='Phone' ordinal='29' />
+                  <column datatype='string' name='Multiple' ordinal='30' />
+                  <column datatype='string' name='OnlineSecurity' ordinal='31' />
+                  <column datatype='string' name='OnlineBackup' ordinal='32' />
+                  <column datatype='string' name='DeviceProtection' ordinal='33' />
+                  <column datatype='string' name='TechSupport' ordinal='34' />
+                  <column datatype='string' name='StreamingTV' ordinal='35' />
+                  <column datatype='string' name='StreamingMovies' ordinal='36' />
+                  <column datatype='string' name='PaperlessBilling' ordinal='37' />
+                  <column datatype='string' name='PaymentMethod' ordinal='38' />
+                  <column datatype='real' name='Tenure' ordinal='39' />
+                  <column datatype='real' name='MonthlyCharge' ordinal='40' />
+                  <column datatype='real' name='Bandwidth_GB_Year' ordinal='41' />
+                  <column datatype='integer' name='Item1' ordinal='42' />
+                  <column datatype='integer' name='Item2' ordinal='43' />
+                  <column datatype='integer' name='Item3' ordinal='44' />
+                  <column datatype='integer' name='Item4' ordinal='45' />
+                  <column datatype='integer' name='Item5' ordinal='46' />
+                  <column datatype='integer' name='Item6' ordinal='47' />
+                  <column datatype='integer' name='Item7' ordinal='48' />
+                  <column datatype='integer' name='Item8' ordinal='49' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.14w1muw0h01ws115tna9d1tqarof'>
+      <datasources>
+        <datasource caption='churn_clean' name='federated.14w1muw0h01ws115tna9d1tqarof' />
+      </datasources>
+      <datasource-dependencies datasource='federated.14w1muw0h01ws115tna9d1tqarof'>
+        <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+        <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+        <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='quantitative' column='[federated.14w1muw0h01ws115tna9d1tqarof].[none:Age:qk]' included-values='in-range'>
+        <min>18</min>
+        <max>89</max>
+      </filter>
+      <filter class='categorical' column='[federated.14w1muw0h01ws115tna9d1tqarof].[none:Contract:nk]'>
+        <groupfilter function='level-members' level='[none:Contract:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Bandwidth GB/Year for Churned Customers'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='20'>Bandwidth GB/Year for Churned Customers</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='churn_clean' name='federated.14w1muw0h01ws115tna9d1tqarof' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14w1muw0h01ws115tna9d1tqarof'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Bandwidth GB Year (bin)' datatype='integer' name='[Bandwidth GB Year (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='2' formula='[Bandwidth_GB_Year]' peg='0' size='250' />
+            </column>
+            <column caption='Bandwidth GB Year' datatype='real' name='[Bandwidth_GB_Year]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[Churn]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Tenure]' role='measure' type='quantitative' />
+            <column-instance column='[Bandwidth_GB_Year]' derivation='Count' name='[cnt:Bandwidth_GB_Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Bandwidth GB Year (bin)]' derivation='None' name='[none:Bandwidth GB Year (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Churn]' derivation='None' name='[none:Churn:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Tenure]' derivation='None' name='[none:Tenure:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.14w1muw0h01ws115tna9d1tqarof].[none:Tenure:qk]' included-values='in-range-or-null'>
+            <min>1.0002593399999999</min>
+            <max>71.999279999999999</max>
+          </filter>
+          <slices>
+            <column>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Age:qk]</column>
+            <column>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Contract:nk]</column>
+            <column>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Tenure:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.14w1muw0h01ws115tna9d1tqarof].[none:Churn:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.14w1muw0h01ws115tna9d1tqarof].[cnt:Bandwidth_GB_Year:qk]</rows>
+        <cols>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Bandwidth GB Year (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.14w1muw0h01ws115tna9d1tqarof].[Bandwidth GB Year (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{92BABB65-524F-4D63-A874-5CA0E24CEA74}' />
+    </worksheet>
+    <worksheet name='Churned Customers by Payment Method'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='20'>Churned Customers by Payment Method</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='churn_clean' name='federated.14w1muw0h01ws115tna9d1tqarof' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14w1muw0h01ws115tna9d1tqarof'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Churn]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+            <column caption='Customer id' datatype='string' name='[Customer_id]' role='dimension' type='nominal' />
+            <column caption='Payment Method' datatype='string' name='[PaymentMethod]' role='dimension' type='nominal' />
+            <column-instance column='[Customer_id]' derivation='Count' name='[cnt:Customer_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Churn]' derivation='None' name='[none:Churn:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+            <column-instance column='[PaymentMethod]' derivation='None' name='[none:PaymentMethod:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Age:qk]</column>
+            <column>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Contract:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.14w1muw0h01ws115tna9d1tqarof].[none:PaymentMethod:nk]' value='133' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.14w1muw0h01ws115tna9d1tqarof].[none:Churn:nk]' />
+              <wedge-size column='[federated.14w1muw0h01ws115tna9d1tqarof].[cnt:Customer_id:qk]' />
+              <size column='[federated.14w1muw0h01ws115tna9d1tqarof].[cnt:Customer_id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.8790607452392578' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14w1muw0h01ws115tna9d1tqarof].[none:PaymentMethod:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{44460CA7-3EDC-4031-B2B2-E07A4DFA5CA7}' />
+    </worksheet>
+    <worksheet name='Filters'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='churn_clean' name='federated.14w1muw0h01ws115tna9d1tqarof' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14w1muw0h01ws115tna9d1tqarof'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Contract:nk]</column>
+            <column>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Age:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8E426F46-353D-4BB6-95BF-F3563E3D69FA}' />
+    </worksheet>
+    <worksheet name='Income of Churned Customers'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='20'>Income of Churned Customers</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='churn_clean' name='federated.14w1muw0h01ws115tna9d1tqarof' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14w1muw0h01ws115tna9d1tqarof'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Churn]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+            <column aggregation='None' caption='Income (bin)' datatype='integer' name='[Income (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='4' formula='[Income]' peg='0' size='10000' />
+            </column>
+            <column datatype='real' name='[Income]' role='measure' type='quantitative' />
+            <column-instance column='[Income]' derivation='Count' name='[cnt:Income:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Churn]' derivation='None' name='[none:Churn:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Income (bin)]' derivation='None' name='[none:Income (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Age:qk]</column>
+            <column>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Contract:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.14w1muw0h01ws115tna9d1tqarof].[none:Churn:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.14w1muw0h01ws115tna9d1tqarof].[cnt:Income:qk]</rows>
+        <cols>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Income (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.14w1muw0h01ws115tna9d1tqarof].[Income (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{79673A5B-6BF6-4CD2-B5D5-D8C57F7DD4BF}' />
+    </worksheet>
+    <worksheet name='Monthly Cost of Churned Customers'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='7'>Monthly Cost of Churned Customers</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='churn_clean' name='federated.14w1muw0h01ws115tna9d1tqarof' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14w1muw0h01ws115tna9d1tqarof'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Churn]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+            <column caption='Monthly Charge' datatype='real' name='[MonthlyCharge]' role='measure' type='quantitative' />
+            <column-instance column='[MonthlyCharge]' derivation='Avg' name='[avg:MonthlyCharge:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Churn]' derivation='None' name='[none:Churn:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14w1muw0h01ws115tna9d1tqarof].[none:Churn:nk]'>
+            <groupfilter function='member' level='[none:Churn:nk]' member='&quot;Yes&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Churn:nk]</column>
+            <column>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Age:qk]</column>
+            <column>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Contract:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.14w1muw0h01ws115tna9d1tqarof].[avg:MonthlyCharge:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3DE99D8D-9B37-431B-9115-D6A1C927C70C}' />
+    </worksheet>
+    <worksheet name='Percentage of Total Churned Customers'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='14'>Percentage of Total Churned Customers</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='churn_clean' name='federated.14w1muw0h01ws115tna9d1tqarof' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14w1muw0h01ws115tna9d1tqarof'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Churn]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+            <column caption='Customer id' datatype='string' name='[Customer_id]' role='dimension' type='nominal' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Churn]' derivation='None' name='[none:Churn:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Customer_id]' derivation='Count' name='[pcto:cnt:Customer_id:qk:1]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.14w1muw0h01ws115tna9d1tqarof].[none:Churn:nk]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14w1muw0h01ws115tna9d1tqarof].[none:Churn:nk]'>
+            <groupfilter function='level-members' level='[none:Churn:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Churn:nk]</column>
+            <column>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Age:qk]</column>
+            <column>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Contract:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.14w1muw0h01ws115tna9d1tqarof].[none:Churn:nk]' />
+              <wedge-size column='[federated.14w1muw0h01ws115tna9d1tqarof].[pcto:cnt:Customer_id:qk:1]' />
+              <size column='[federated.14w1muw0h01ws115tna9d1tqarof].[pcto:cnt:Customer_id:qk:1]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C6CCD61B-9470-451F-B26C-1AAE657B06F2}' />
+    </worksheet>
+    <worksheet name='Tenure vs. Churned Customers'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='20'>Tenure vs. Churned Customers</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='churn_clean' name='federated.14w1muw0h01ws115tna9d1tqarof' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14w1muw0h01ws115tna9d1tqarof'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Churn]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+            <column aggregation='None' caption='Tenure (bin)' datatype='integer' name='[Tenure (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Tenure]' peg='0' size='2' />
+            </column>
+            <column datatype='real' name='[Tenure]' role='measure' type='quantitative' />
+            <column-instance column='[Tenure]' derivation='Count' name='[cnt:Tenure:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Churn]' derivation='None' name='[none:Churn:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Tenure (bin)]' derivation='None' name='[none:Tenure (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14w1muw0h01ws115tna9d1tqarof].[none:Churn:nk]'>
+            <groupfilter function='level-members' level='[none:Churn:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Churn:nk]</column>
+            <column>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Age:qk]</column>
+            <column>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Contract:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='height-header' value='19' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.14w1muw0h01ws115tna9d1tqarof].[none:Churn:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.14w1muw0h01ws115tna9d1tqarof].[cnt:Tenure:qk]</rows>
+        <cols>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Tenure (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.14w1muw0h01ws115tna9d1tqarof].[Age (bin)]</column>
+          <column>[federated.14w1muw0h01ws115tna9d1tqarof].[Tenure (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{48EC60D6-456C-4524-BBBC-409DEC1FA6AB}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size minheight='560' minwidth='420' sizing-mode='range' />
+      <datasources>
+        <datasource caption='churn_clean' name='federated.14w1muw0h01ws115tna9d1tqarof' />
+      </datasources>
+      <datasource-dependencies datasource='federated.14w1muw0h01ws115tna9d1tqarof'>
+        <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+        <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+        <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98684' id='28' param='horz' type-v2='layout-flow' w='49659' x='50000' y='658'>
+            <zone h='98684' id='25' param='horz' type-v2='layout-flow' w='49659' x='50000' y='658'>
+              <zone h='98684' id='21' param='horz' type-v2='layout-flow' w='49659' x='50000' y='658'>
+                <zone h='98684' id='18' param='horz' type-v2='layout-flow' w='49659' x='50000' y='658'>
+                  <zone h='98684' id='15' param='horz' type-v2='layout-flow' w='49659' x='50000' y='658'>
+                    <zone h='98684' id='7' param='horz' type-v2='layout-flow' w='49659' x='50000' y='658'>
+                      <zone h='98684' id='5' type-v2='layout-basic' w='49659' x='50000' y='658'>
+                        <zone h='53536' id='9' name='Churned Customers by Payment Method' w='21775' x='50000' y='658'>
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                        <zone h='53536' id='11' name='Income of Churned Customers' w='21754' x='71775' y='658'>
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                        <zone h='45148' id='12' name='Bandwidth GB/Year for Churned Customers' w='49659' x='50000' y='54194'>
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                        <zone fixed-size='155' h='53536' id='27' is-fixed='true' param='vert' type-v2='layout-flow' w='6130' x='93529' y='658'>
+                          <zone h='8882' id='31' name='Tenure vs. Churned Customers' param='[federated.14w1muw0h01ws115tna9d1tqarof].[none:Contract:nk]' type-v2='filter' w='6130' x='93529' y='658'>
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                          <zone h='5674' id='32' name='Tenure vs. Churned Customers' param='[federated.14w1muw0h01ws115tna9d1tqarof].[none:Age:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='6130' x='93529' y='9540'>
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                          <zone fixed-size='115' h='10115' id='13' is-fixed='true' name='Monthly Cost of Churned Customers' w='6130' x='93529' y='15214'>
+                            <layout-cache fixed-size-w='60' type-h='fixed' type-w='fixed' />
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                          <zone h='28865' id='16' name='Percentage of Total Churned Customers' w='6130' x='93529' y='25329'>
+                            <layout-cache cell-count-h='1' cell-count-w='1' non-cell-size-h='96' type-h='cell' type-w='cell' />
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                        </zone>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='98684' id='30' name='Tenure vs. Churned Customers' w='49659' x='341' y='658'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='4770' id='33' name='Tenure vs. Churned Customers' pane-specification-id='0' param='[federated.14w1muw0h01ws115tna9d1tqarof].[none:Churn:nk]' type-v2='color' w='5960' x='35462' y='13980' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1550' minheight='1550' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='41' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98684' id='40' param='vert' type-v2='layout-flow' w='99318' x='341' y='658'>
+                <zone h='8882' id='31' mode='checkdropdown' name='Tenure vs. Churned Customers' param='[federated.14w1muw0h01ws115tna9d1tqarof].[none:Contract:nk]' type-v2='filter' w='6130' x='93529' y='658'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5674' id='32' name='Tenure vs. Churned Customers' param='[federated.14w1muw0h01ws115tna9d1tqarof].[none:Age:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='6130' x='93529' y='9540'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98684' id='30' is-fixed='true' name='Tenure vs. Churned Customers' w='49659' x='341' y='658'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4770' id='33' name='Tenure vs. Churned Customers' pane-specification-id='0' param='[federated.14w1muw0h01ws115tna9d1tqarof].[none:Churn:nk]' type-v2='color' w='5960' x='35462' y='13980'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='53536' id='9' is-fixed='true' name='Churned Customers by Payment Method' w='21775' x='50000' y='658'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='53536' id='11' is-fixed='true' name='Income of Churned Customers' w='21754' x='71775' y='658'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='49' h='10115' id='13' is-fixed='true' name='Monthly Cost of Churned Customers' w='6130' x='93529' y='15214'>
+                  <layout-cache fixed-size-w='60' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='153' h='28865' id='16' is-fixed='true' name='Percentage of Total Churned Customers' w='6130' x='93529' y='25329'>
+                  <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='245' h='45148' id='12' is-fixed='true' name='Bandwidth GB/Year for Churned Customers' w='49659' x='50000' y='54194'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{7500E0C5-2C4E-4509-BE30-625A430DA92D}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Tenure vs. Churned Customers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.14w1muw0h01ws115tna9d1tqarof].[none:Contract:nk]' type='filter' />
+            <card param='[federated.14w1muw0h01ws115tna9d1tqarof].[none:Age:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.14w1muw0h01ws115tna9d1tqarof].[none:Churn:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.14w1muw0h01ws115tna9d1tqarof].[:Measure Names]</field>
+            <field>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Age (bin):ok]</field>
+            <field>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Age:qk]</field>
+            <field>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Churn:nk]</field>
+            <field>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Contract:nk]</field>
+            <field>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Tenure (bin):ok]</field>
+            <field>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Tenure:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C86B0B3B-DE5B-4840-91B8-0D9ACE335CE4}' />
+    </window>
+    <window class='worksheet' name='Churned Customers by Payment Method'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card pane-specification-id='0' param='[federated.14w1muw0h01ws115tna9d1tqarof].[none:Churn:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.14w1muw0h01ws115tna9d1tqarof].[cnt:Customer_id:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Churn:nk]</field>
+            <field>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Customer_id:nk]</field>
+            <field>[federated.14w1muw0h01ws115tna9d1tqarof].[none:PaymentMethod:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FF36C896-D657-4C36-9D7A-47DEB2E45F71}' />
+    </window>
+    <window class='worksheet' name='Income of Churned Customers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.14w1muw0h01ws115tna9d1tqarof].[none:Churn:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Churn:nk]</field>
+            <field>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Customer_id:nk]</field>
+            <field>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Income (bin):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A0EFA592-B295-4205-98C3-53C04AE3B574}' />
+    </window>
+    <window class='worksheet' name='Bandwidth GB/Year for Churned Customers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.14w1muw0h01ws115tna9d1tqarof].[none:Churn:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Bandwidth GB Year (bin):ok]</field>
+            <field>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Bandwidth_GB_Year:qk]</field>
+            <field>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Churn:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{EC50EE7E-93D5-449C-8449-2BA3437B40F1}' />
+    </window>
+    <window class='worksheet' name='Filters'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.14w1muw0h01ws115tna9d1tqarof].[none:Age:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.14w1muw0h01ws115tna9d1tqarof].[none:Contract:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Age:qk]</field>
+            <field>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Contract:nk]</field>
+            <field>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Tenure:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6CEAFE81-154F-48FB-89C0-4A2DB64C25C8}' />
+    </window>
+    <window class='worksheet' name='Monthly Cost of Churned Customers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.14w1muw0h01ws115tna9d1tqarof].[none:Churn:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Churn:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6C0EA16B-E79E-4D1E-B94F-F30AF6ECC117}' />
+    </window>
+    <window class='worksheet' name='Percentage of Total Churned Customers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.14w1muw0h01ws115tna9d1tqarof].[none:Churn:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.14w1muw0h01ws115tna9d1tqarof].[pcto:cnt:Customer_id:qk:1]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Churn:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C919F26D-4AFF-4A8C-9117-7DD5C7B5B960}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Bandwidth GB/Year for Churned Customers'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Churned Customers by Payment Method'>
+          <zoom type='fit-width' />
+          <highlight field='[federated.14w1muw0h01ws115tna9d1tqarof].[cnt:Customer_id:qk]' type='size'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Income of Churned Customers'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Monthly Cost of Churned Customers' />
+        <viewpoint name='Percentage of Total Churned Customers'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Tenure vs. Churned Customers'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.14w1muw0h01ws115tna9d1tqarof].[none:Churn:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='12' />
+      <simple-id uuid='{F8F95558-DDB0-41D2-AF4E-BEB065FA81A2}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Bandwidth GB/Year for Churned Customers' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Churned Customers by Payment Method' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Filters' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAADlUlEQVR4nO3awW4TZxSG4TPOjEMcG9QiAgioKvX+r6Z3wCYpISokcWyPsYdVN/UKK4kh
+      3/OsLMu/dDavZo5+N8MwDAWhRvse1A1Pwd4B3N7e3ucccBB7BwBPgQCIJgCiCYBoAiCaAIgm
+      AKIJgGht1X63usMwuA3ml9f+9+FHb3YXi0U1TXPvA8Fjaquqmqap2Wz2w4f3OQM/EzsA0QRA
+      NAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEE
+      QDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDR
+      BEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA
+      0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQT
+      ANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBE
+      EwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0A
+      RBMA0QRANAEQrf3/F1eX/9RisazfX7+rttnWt/W6xsfH1ffrmkxODjEjPJidAEbtuM5edvXx
+      /KJeTo5qvm3q7vxzTcej6v74UN0hpoQHshPAcXdU/96t68PbVzXu2uo/XdZvLya1rdHuj+EX
+      1wzDMOxz8Obmpmaz2X3PA49qZwketn1dfLqq1aqvqqrr6+uqqprP5487GTyCnbea1fxLLfpR
+      tVcX9ff55zp7+676xbxuV9s6PT09xIzwYHZ3gMnzOuu62iyqXr95U6eTk2o2y3rWWH95euwA
+      RNt5Aiy/fqm7tqsXx+Pqv22rHVVth6qhmnp2PD7EjPBgdgIYtptafr2ty0VfR6O2Trqm+tWy
+      tkcn9def7w8xIzyYnQC6ybReTac1W/W1XG3q+fSkNutV3a33elOCn5odgGj+DEc0ARBNAEQT
+      ANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBE
+      EwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0A
+      RPsO9mWQp2yfaGIAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Income of Churned Customers' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='24' name='Monthly Cost of Churned Customers' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAAAYCAYAAABKtPtEAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACsElEQVRYhe2YTyisURjGf74o+fz71BQlGY2FQjGajWykxmxmQ1mxko3S2CHJUkk2bGY/
+      lpYThYmlhpTCEM3MYhoG+TtMn2/eu7jdud3rXotbt6PMb3fOe3p63uecd3MKRET4wmiqDagm
+      H4BqA6rJB6DagGryAag2oJp8AKoNqCYfgGoDqskHoNqAapQHkM1mOT09ZXZ2loGBAa6urnL7
+      gUCA7u5uXC4X4+PjuRpAKBTC4/HgcrkYHBzk4uLij/o3NzfMzMzQ2dlJR0cHHo+HUCj084Ao
+      5vDwUHw+nxwdHcnCwoJcXl6KiMj29rZMTk7K7e2tWJYlwWBQpqamxDRNiUQi4vP5JBaLiWVZ
+      Eg6HZWxsTO7v79/pn5+fy9ramjw9PYllWRKJRGR4eFhisZiIiCh/Ac3NzSwuLtLU1PTLfjQa
+      pb+/H8Mw0DQNt9uNYRgkEgni8Tg9PT3U1dWhaRpOp5P29nZOTk7e6Tc0NOB2u9F1HU3TcDgc
+      1NfXk8lkgE8wAn+jsrKS1dVV0uk0AHd3d7y9vZFMJjEMg2AwyPX1NQDPz8+YpkkikfhQM5VK
+      sby8jK7r2O12AAr/bxv/jtfrxev15tZVVVWICMXFxbS2tuJ0OnO1H7dbWlr6oWZJSQmNjY3s
+      7OyQTqcpLy//vC/gd1KpFMlkkpqamne1l5cXjo+Pqa2t/VBD13V6e3ux2+2Ew2HgE4/Aw8MD
+      0WiUbDbL4+Mj8/PztLS0YLPZyGQynJ2dYZomr6+v+P1+ysrKcDgc73Q2NzfZ3d3NzXw8Hmdv
+      b4+KigrgE4zAxsYGExMTufXKygoAW1tbzM3Nsb+/T1FREX19fQwNDeXOBQIB1tfXAejq6mJ6
+      eprCwu/t+P1+AEZGRqiurmZpaYmDgwNM08RmszE6OkpbWxsABSL5X+EvzTeFj7XazwY66gAA
+      AABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Percentage of Total Churned Customers' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAEZUlEQVR4nO3cTWucVRzG4f+TpE1Mk9pailqDb7SKVNGFbxXcitAP4LcTXLjTpeBC0I0g
+      WLoqoqKlaqvWl9YYoyaZeY4LoRKSmW3x3Ne1e859FrPILwxDJkNrrRWEWrjbLwDuJgEQTQBE
+      EwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0A
+      RBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBN
+      AEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQ
+      TQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQB
+      EE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0
+      ARBNAMRqrQmAXOOtqwIgU2utdi+9KQAyjbeu1uSL9wVAntZa7V1+q2q6IwDytK0fa+/z96rK
+      p0AE2rvybtVkp6oEQJi2u117V9658ywAokyufVxt+5c7zwIgRmtt32//KgEQpP1xs6bXL+07
+      EwAxJl9/WDXd3XcmACK01mry1QcHzgVAhLb9U02/v3zgXABEmH77SdV078C5AOhea60m1z4+
+      dBMA/Zvu1vT6p4dOAqB742/fVNv++dBNAHRvvPnZzE0AdG9y49LMTQB0rbWxxp+/nLkLgL5N
+      dmrc/G7mLAC61v64WbWzNXMXAF2b/np17i4Auta2fpi7C4Cujb/fmLsLgK61rR/n7gKga+2v
+      23N3AdCt1sZqf2/OvSMA+jWO1Xa3514RAP1q453//zOLAOhYqxonc28IgH61Vk0AMJsA6Ncw
+      1LCwNPeKAOjXMFQtHpl7RQD0a1ioWlqee0UA9GtYrGHl3rlX5r9Bgv+xYRhqb/lUbU2P1XZb
+      qc1xrX4fV2tzXKvb43rdHtcEQN/enr5RH926ULu1VFXDgd1bILp2/MTJ2q0jddgPf5UA6Nzp
+      E6tzdwHQtQfvW5u7C4CuPXT6+NxdAHTt3mPLdXJ9ZeYuALq2tLhQZ06tz9wFQNeGYajHzpyc
+      uQuA7j392OmZmwDo3rmNUzM3AdC9k2srtTHj0yAB0L3FxYV69uz9h24CIMJzZx849FwARDj/
+      6OlaOXrwbz8FQITVlSOHvg0SABGGYagL5zcOnAuAGM8/eabW7jm670wAxFhfXa4Xn3po35kA
+      iPLaC4/vexYAUc5tnKpH7v/vi/ICIMrS4kJdfOWJO88CIM6rzzxcJ9b+/Y6AAIizunKkXn/p
+      bFUJgFAXXz5X66tHBUCm48eW6+KFczW01trdfjFwN2z9uSMAsnkLRDQBEE0ARBMA0QRANAEQ
+      TQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAET7B/PGxfp9
+      kCOHAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Tenure vs. Churned Customers' width='192'>
+      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
+      vakSAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
